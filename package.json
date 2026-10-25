@@ -1,0 +1,23 @@
+{
+  "name": "naveen-portfolio",
+  "private": true,
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "start": "npx vercel dev",
+    "lint": "eslint api public/js eslint.config.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run format:check"
+  },
+  "dependencies": {
+    "nodemailer": "^10.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}

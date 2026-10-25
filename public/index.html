@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061a20" />
+    <meta
+      name="description"
+      content="Naveen Prakash S — Full Stack Developer creating thoughtful, reliable digital experiences."
+    />
+    <title>Naveen Prakash S — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Naveen Prakash S home">
+          <span class="brand-mark">NP</span>
+          <span>Naveen Prakash S<span class="accent">.</span></span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy-wrap reveal">
+              <span class="pill"><span class="dot"></span> Full Stack Developer</span>
+              <h1>
+                Naveen Prakash S<span class="accent">.</span><br />Making complex <br />things
+                <span class="accent">beautiful.</span>
+              </h1>
+              <p class="hero-copy">
+                I turn ideas and client requirements into user-friendly digital experiences. Focused
+                on frontend development, with a practical understanding of backend systems. From
+                sprint planning to production delivery, I turn challenges into solutions that work!
+              </p>
+              <div class="actions">
+                <a class="btn" href="#projects">View My Work <span>↘</span></a>
+                <a class="btn secondary" href="#contact"><span>⌖</span> Get In Touch</a>
+                <a class="btn secondary" href="resume.pdf" download>Download Resume ↓</a>
+              </div>
+            </div>
+            <div class="hero-visual reveal">
+              <div class="portrait-wrap">
+                <img
+                  src="https://ik.imagekit.io/naveenprakashs2003/ProfilePhoto.jpg"
+                  alt="Naveen Prakash S portrait"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.classList.add('portrait-fallback');
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="skill-row reveal" aria-label="Technical skills marquee">
+            <div class="skill-track">
+              <span class="skill-pill"><span></span> HTML</span>
+              <span class="skill-pill"><span></span> CSS</span>
+              <span class="skill-pill"><span></span> React.js</span>
+              <span class="skill-pill"><span></span> Node.js</span>
+              <span class="skill-pill"><span></span> Next.js</span>
+              <span class="skill-pill"><span></span> Typescript</span>
+              <span class="skill-pill"><span></span> Git & GitHub</span>
+              <span class="skill-pill"><span></span> Tailwind CSS</span>
+              <span class="skill-pill"><span></span> Bootstrap</span>
+              <span class="skill-pill"><span></span> Kafka</span>
+              <span class="skill-pill"><span></span> Redis</span>
+              <span class="skill-pill"><span></span> MongoDB</span>
+              <span class="skill-pill"><span></span> MySQL</span>
+              <span class="skill-pill"><span></span> PostgreSQL</span>
+            </div>
+            <div class="skill-track" aria-hidden="true">
+              <span class="skill-pill"><span></span> HTML</span>
+              <span class="skill-pill"><span></span> CSS</span>
+              <span class="skill-pill"><span></span> React.js</span>
+              <span class="skill-pill"><span></span> Node.js</span>
+              <span class="skill-pill"><span></span> Next.js</span>
+              <span class="skill-pill"><span></span> Typescript</span>
+              <span class="skill-pill"><span></span> Git & GitHub</span>
+              <span class="skill-pill"><span></span> Tailwind CSS</span>
+              <span class="skill-pill"><span></span> Bootstrap</span>
+              <span class="skill-pill"><span></span> Kafka</span>
+              <span class="skill-pill"><span></span> Redis</span>
+              <span class="skill-pill"><span></span> MongoDB</span>
+              <span class="skill-pill"><span></span> MySQL</span>
+              <span class="skill-pill"><span></span> PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker"><span class="dot"></span> Projects</span>
+            <h2>Where Ideas Become <span class="accent">Smart Solutions</span></h2>
+            <p>
+              Bringing ideas to life through thoughtful development and Crafting responsive
+              interfaces with precision and purpose.
+            </p>
+          </div>
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-copy">
+                <h3>BGV Platform – Background Verification System</h3>
+                <p>
+                  Worked on an enterprise-grade Background Verification (BGV) Platform, developing
+                  configurable verification workflows, vendor management, and automated approval
+                  processes. Implemented maker-checker approvals, primary/fallback vendor selection,
+                  bulk Excel import/export, and advanced filtering.
+                </p>
+                <p>
+                  Integrated DPDP Act 2023 consent gating, billing logic, and OPA-based role-level
+                  access control to ensure secure, scalable, and efficient verification operations.
+                </p>
+                <div class="tech-list">
+                  <span class="tech">React</span>
+                  <span class="tech">Micro Frontend</span>
+                  <span class="tech">Matine</span>
+                  <span class="tech">Open Policy Agent (OPA)</span>
+                  <span class="tech">REST API</span>
+                  <span class="tech">Kafka</span>
+                </div>
+                <div class="project-links">
+                  <a href="#contact">View case study ↗</a>
+                  <a href="#contact">Project demo ↗</a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div class="mock-browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><span>hotconnect.app</span></div>
+                  <div class="mock-content">
+                    <span class="mini-tag">Connected · Secure</span>
+                    <h4>Share your<br /><span class="accent">connection.</span></h4>
+                    <p>Simple, secure internet sharing for everyone.</p>
+                    <span class="mock-btn">Manage hotspot ↗</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-copy">
+                <h3>CraftKit – Modern UI System Builder</h3>
+                <p>
+                  CraftKit is a digital design suite aimed at teams needing to quickly prototype,
+                  test, and ship elegant user interfaces. With a modular component library and
+                  intuitive navigation, it supports seamless design workflows without sacrificing
+                  power or flexibility.
+                </p>
+                <p>
+                  Animations and interactive previews help bring ideas to life while keeping
+                  everything streamlined and collaborative.
+                </p>
+                <div class="tech-list">
+                  <span class="tech">Figma</span>
+                  <span class="tech">React</span>
+                  <span class="tech">CSS</span>
+                  <span class="tech">Storybook</span>
+                  <span class="tech">Design Systems</span>
+                </div>
+                <div class="project-links">
+                  <a href="#contact">View case study ↗</a>
+                  <a href="#contact">Project demo ↗</a>
+                </div>
+              </div>
+              <div class="project-visual">
+                <div class="mock-browser">
+                  <div class="browser-bar"><i></i><i></i><i></i><span>craftkit.design</span></div>
+                  <img
+                    src="https://www.figma.com/api/mcp/asset/0c9c06a8-5ac1-4d8d-be11-f124f04bab17.png"
+                    alt="CraftKit UI preview"
+                    style="display: block; width: 100%; max-height: 220px; object-fit: cover"
+                    onerror="this.style.display = 'none'"
+                  />
+                </div>
+                <div class="project-stats">
+                  <div class="stat"><small>Component Reuse</small><strong>78%</strong></div>
+                  <div class="stat"><small>Workflow Efficiency</small><strong>88%</strong></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about-grid">
+          <div class="about-copy reveal">
+            <span class="section-kicker"><span class="dot"></span> About Me</span>
+            <h2>Full Stack <span class="accent">Developer</span></h2>
+            <p>
+              Combining creative thinking with frontend expertise, I turn client requirements into
+              polished, responsive, and intuitive digital experiences.
+            </p>
+            <p>
+              I focus on the details that matter — clean interfaces, smooth interactions,
+              maintainable code, and smart solutions that make complex ideas simple.
+            </p>
+            <div class="metrics">
+              <div class="metric"><strong>2+</strong><span>Years building for the web</span></div>
+              <div class="metric">
+                <strong>6+</strong><span>Projects and features shipped</span>
+              </div>
+              <div class="metric"><strong>100%</strong><span>Focus on maintainable code</span></div>
+              <div class="metric"><strong>Full</strong><span>Stack delivery mindset</span></div>
+            </div>
+          </div>
+          <div class="about-art reveal">
+            <div class="code-window">
+              <div class="code-head">✦ developer.ts</div>
+              <div class="code-lines">
+                <div><span class="purple">const</span> developer = {</div>
+                <div class="indent">name: <span class="green">'Naveen Prakash S'</span>,</div>
+                <div class="indent">role: <span class="green">'Full Stack Developer'</span>,</div>
+                <div class="indent">
+                  mindset: <span class="green">'Driven by purpose, defined by craft'</span>,
+                </div>
+                <div class="indent">values: [</div>
+                <div class="indent">
+                  &nbsp;&nbsp;<span class="yellow">'Think clearly'</span>,
+                  <span class="yellow">'Build exceptionally'</span>,
+                </div>
+                <div class="indent">
+                  &nbsp;&nbsp;<span class="yellow">'Evolve continuously'</span>
+                </div>
+                <div class="indent">]</div>
+                <div>};</div>
+                <br />
+                <div>
+                  <span class="purple">return</span> meaningfulWork();<span class="green"> ▍</span>
+                </div>
+              </div>
+            </div>
+            <div class="availability">
+              <span class="dot" style="display: inline-block; margin-right: 8px"></span
+              ><b>Open to meaningful opportunities</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker"><span class="dot"></span> Experience</span>
+            <h2>Learning, Building and <span class="accent">Leading</span></h2>
+            <p>
+              Crafting intuitive, responsive interfaces through frontend expertise. Coordinating
+              sprints and team progress to deliver quality solutions.
+            </p>
+          </div>
+          <div class="experience-grid">
+            <article class="experience-card reveal">
+              <span class="eyebrow">Full Stack Development</span>
+              <h3>Product Engineering</h3>
+              <p>
+                End-to-end development across frontend interfaces, backend services, APIs, and data
+                layers.
+              </p>
+              <ul>
+                <li>Develop clean, responsive web interfaces.</li>
+                <li>Integrate APIs and databases.</li>
+                <li>Debug and optimize performance.</li>
+              </ul>
+            </article>
+            <article class="experience-card reveal">
+              <span class="eyebrow">Planning & Coordination</span>
+              <h3>Team Leadership</h3>
+              <p>
+                Keeping development organized through clear priorities, team coordination, and
+                consistent progress tracking.
+              </p>
+              <ul>
+                <li>Coordinate sprint planning and task progress.</li>
+                <li>Track change requests and bug reports.</li>
+                <li>Align team efforts to deliver on time.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker"><span class="dot"></span> Tech Stack</span>
+            <h2>The Stack Behind <span class="accent">My Work</span></h2>
+            <p>
+              Choosing the right technologies to build clean interfaces, write maintainable code,
+              and deliver seamless user experiences.
+            </p>
+          </div>
+          <div class="stack-grid">
+            <article class="stack-card reveal">
+              <h3>Frontend</h3>
+              <p>
+                Micro Frontend Architecture <br />HTML5 · CSS3 · JavaScript<br />React · Responsive
+                UI<br />
+                Next · Matine · Tailwind
+              </p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Backend</h3>
+              <p>
+                Node.js <br />REST APIs · PostgreSQL<br />Authentication · Open Policy Agent(OPA)
+              </p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Database</h3>
+              <p>MongoDB · SQL<br /></p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>Tools & Delivery</h3>
+              <p>Git · GitHub <br />Testing · Debugging</p>
+            </article>
+            <article class="stack-card reveal">
+              <h3>AI Tools</h3>
+              <p>Kiro · Cursor · Windsurf<br />Stitch · AntiGravity<br />Claude · Copilot</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker"><span class="dot"></span> How I Work</span>
+            <h2>Good Software Is <span class="accent">Built on Purpose</span></h2>
+            <p>
+              A few core principles shape how I turn ideas into polished interfaces and reliable
+              digital solutions.
+            </p>
+          </div>
+          <div class="principles-grid">
+            <article class="principle-card reveal">
+              <div class="card-icon">⌘</div>
+              <h3>Simplicity over complexity</h3>
+              <p>
+                Clean code and intuitive interfaces make products easier to use, maintain, and
+                improve.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <div class="card-icon">◈</div>
+              <h3>Users at the Center</h3>
+              <p>
+                Understanding user needs and client requirements to create intuitive, meaningful
+                digital experiences.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <div class="card-icon">↗</div>
+              <h3>Always Evolving</h3>
+              <p>
+                Learning from feedback, refining solutions, and continuously improving code and user
+                experiences.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker"><span class="dot"></span> What I Can Help With</span>
+            <h2>From Concept to <span class="accent">Creation</span></h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="card-icon">⌘</div>
+              <h3>Frontend Development</h3>
+              <p>Responsive, intuitive interfaces built for seamless user experiences.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="card-icon">⌁</div>
+              <h3>Backend & APIs</h3>
+              <p>Connecting frontend experiences with reliable APIs and backend services.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="card-icon">⚙</div>
+              <h3>Team Coordination</h3>
+              <p>Managing sprint plans, change requests, and bug tracking for smoother delivery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-copy">
+              <span class="section-kicker"><span class="dot"></span> Get In Touch</span>
+              <h2>Have a good idea?<br /><span class="accent">Let's build it.</span></h2>
+              <p>
+                Have a project, opportunity, or a tricky technical problem in mind? Send a note and
+                tell me a little about it.
+              </p>
+              <div class="contact-detail">
+                <p><span>✉</span> snaveenprakash06@gmail.com</p>
+                <p><span>⌖</span> Open to Building Great Things Together</p>
+                <p><span>↗</span> GitHub · LinkedIn</p>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="contact-form-heading">
+                <span class="form-eyebrow">START A CONVERSATION</span>
+                <h3>Tell me about your idea</h3>
+                <p>I’ll get back to you as soon as I can.</p>
+              </div>
+              <div class="contact-honeypot" aria-hidden="true">
+                <label for="company">Leave this field empty</label>
+                <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+              <div class="field">
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  maxlength="100"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="message">What would you like to build?</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  maxlength="5000"
+                  placeholder="Tell me a little about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button class="btn contact-submit" type="submit">
+                <span class="button-label">Send inquiry</span><span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-note" id="formStatus" role="status" aria-live="polite">
+                Your details will only be used to respond to your inquiry.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home">
+          <span class="brand-mark">NP</span>
+          <span>Naveen Prakash S<span class="accent">.</span></span>
+        </a>
+        <div>© <span id="year"></span> Naveen Prakash S · Built with care.</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+          <a href="resume.pdf" download>Resume ↓</a>
+          <a href="#home">Back to top ↑</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
